@@ -5,7 +5,7 @@ import os
 
 class BaseConfig(object):
     SECRET_KEY=os.getenv('SECRET_KEY','as;lkdjdasdcjsa')
-    SQLALCHEMY_DATABASE_URI='mysql://aaa:aaa@127.0.0.1:3306/blue_mbm'
+    SQLALCHEMY_DATABASE_URI='mysql://root:root@127.0.0.1:3306/blueblog_mbm'
     SQLALCHEMY_TRACK_MODIFICATIONS= True
 
 class DevelopmentConfig(BaseConfig):
